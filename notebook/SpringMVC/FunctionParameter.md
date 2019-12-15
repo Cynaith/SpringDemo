@@ -21,7 +21,7 @@ Spring Controller方法可以接受多种类型参数
 - **BinderResult和Errors:** 用来处理数据绑定过程中的错误
 
 ---
-##### PathVariable
+##### @PathVariable
 注解PathVariable用于请求url中获取参数并映射到方法参数中
 ```java
    @RequestMapping(value = "get/{id}.json")

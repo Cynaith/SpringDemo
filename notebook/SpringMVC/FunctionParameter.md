@@ -1,9 +1,9 @@
 #### 方法参数
 Spring Controller方法可以接受多种类型参数
-- **[@PathVariable](#@PathVariable):** 可以将URL中的值映射到方法参数中
-- **Model:** Spring中的通用MVC模型,也可以使用Map和ModelMap作为渲染视图的模型
-- **ModelAndView:** 包含了模型和视图路径的对象
-- **JavaBean:** 将HTTP参数映射到JavaBean对象 
+- **[@PathVariable](#pathVariable):** 可以将URL中的值映射到方法参数中
+- **[Model](#model和ModelAndView):** Spring中的通用MVC模型,也可以使用Map和ModelMap作为渲染视图的模型
+- **[ModelAndView](#model和ModelAndView):** 包含了模型和视图路径的对象
+- **[JavaBean](#javaBean接受HTTP参数):** 将HTTP参数映射到JavaBean对象 
 - **MultiPartFile:** 用于处理文件上传 
 - **@ModelAttribute:** 使用该注解的变量将作为Model的一个属性 
 - **WebRequest或者NativeWebRequest:** 类似Servlet Request但做了一定封装。
@@ -11,7 +11,7 @@ Spring Controller方法可以接受多种类型参数
 - **java.io.OutputStream和java.io.Writer:** 用来获取Servlet API中的OutputStream/Writer
 - **HttpMethod:** 枚举类型,对应于HTTP Method,如POST、GET
 - **@MatrixVariable:** 矩阵变量  
-- **@RequestParam:** 对应于HTTP请求的参数,自动转化为参数对应的类型  
+- **[@RequestParam](#requestParam):** 对应于HTTP请求的参数,自动转化为参数对应的类型  
 - **@RequestHeader:** 对应于HTTP请求头参数,自动转化为对应的类型 
 - **@RequestBody:** 自动将请求内容转化为指定的对象,默认使用HttpMessageConverters来转化 
 - **@RequestPart:** 用于文件上传,对应于HTTP协议的multipart/form-data 

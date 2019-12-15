@@ -8,3 +8,37 @@ RequestMapping有多个属性来进一步匹配HTTP请求到Controller方法
 * **produces:** 相应的媒体类型,如`produces = "application/json"`,对应于HTTP的Accept字段。
 * **params:** 请求的参数,如`params = "action = update"。
 * **headers:** 请求的HTTP头的值,如headers = "myHeader = myValue"。
+#### URL路径映射
+属性value用于匹配一个URL映射，value支持简单的表达式来匹配:
+```java
+   @RequestMapping(value = "get/{id}.json")
+    public @ResponseBody User getById(@PathVariable("id") Long id){
+        return userService.getUserById(id);
+    }
+```
+
+#### Ant路径表达式
+Ant用符号"*" 来表示匹配任意字符,用"**"来表示统配任意路径,用"?"来匹配单个字符,比如
+- **`/user/*.html`:** 匹配/user/1.html、/user/2.html
+- **`/**/1.html`:** 匹配/1.html,也匹配/user/1.html,还匹配/user/add/1.html
+- **`/user/?.html`:** 匹配/user/1.html,但不匹配/user/11.html 
+
+如果一个请求有多个@RequestMapping能够匹配,通常是更具体的匹配会作为处理此请求的方法
+- 有通配符的低于没有通配符的,比如`/user/add.json`比`/user/*.json`优先匹配
+- 有"**"通配符的低于有"*"通配符的
+
+#### HTTP method匹配
+@RequestMapping提供method属性来映射对应HTTP的请求方法,通常HTTP请求方法有如下方法
+- **GET:** 用来获取URL对应内容
+- **POST:** 用来向服务器提交信息
+- **HEAD:** 同GET,但不返回消息体,通常用于返回URL对应的元信息,如过期时间等。搜索引擎通常用HEAD来获取网页信息
+- **PUT:** 同POST,用来向服务器提交信息,但语义上更像一个更新操作。同一个数据PUT多次不会改变数据。
+- **DELETE:** 删除对应资源信息
+- **PATCH:** 类似PUT方法,表示信息的局部更新
+
+Spring提供新注解来表示HTTP方法:
+- @GetMapping/@PostMapping...
+
+#### consumes和produces
+
+

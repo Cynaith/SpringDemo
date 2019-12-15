@@ -16,7 +16,7 @@ RequestMapping有多个属性来进一步匹配HTTP请求到Controller方法
         return userService.getUserById(id);
     }
 ```
-
+---
 #### Ant路径表达式
 Ant用符号"*" 来表示匹配任意字符,用"**"来表示统配任意路径,用"?"来匹配单个字符,比如
 - **`/user/*.html`:** 匹配/user/1.html、/user/2.html
@@ -26,7 +26,7 @@ Ant用符号"*" 来表示匹配任意字符,用"**"来表示统配任意路径,�
 如果一个请求有多个@RequestMapping能够匹配,通常是更具体的匹配会作为处理此请求的方法
 - 有通配符的低于没有通配符的,比如`/user/add.json`比`/user/*.json`优先匹配
 - 有"**"通配符的低于有"*"通配符的
-
+---
 #### HTTP method匹配
 @RequestMapping提供method属性来映射对应HTTP的请求方法,通常HTTP请求方法有如下方法
 - **GET:** 用来获取URL对应内容
@@ -38,7 +38,41 @@ Ant用符号"*" 来表示匹配任意字符,用"**"来表示统配任意路径,�
 
 Spring提供新注解来表示HTTP方法:
 - @GetMapping/@PostMapping...
-
+---
 #### consumes和produces
+##### consumes
+属性consumes意味着请求的HTTP头的Content-Type媒体类型与consumes的值匹配,才能调用此方法
+<br>常见的MediaType(媒体)类型如下
+- **text/html:** HTML格式 
+- **text/plain:** 纯文本格式 
+- **text/xml:** XML格式
+- **image/gif:** gif图片格式
+- **image/jpeg:** jpg图片格式
+- **image/png**:png图片格式 
+
+以application开头的媒体格式类型如下
+- **application/xhtml+xml:** XHTML格式
+- **application/xml:** XML格式
+- **application/atom+xml:** Atom XML聚合格式
+- **application/json:** json格式
+- **application/pdf:** pdf格式
+- **application/msword:** Word文档格式
+- **application/octet-stream:** 二进制流数据(常见的文件下载)
+
+上传文件时
+- **multipart/form-data:** 需要在表单中进行文件上传时，就需要使用该格式
+
+##### produces
+表示的指定返回MIME格式
+
+---
+#### params和header匹配
+可以从请求参数或者HTTP头中提取值来进一步确定调用的方法,有以下三种格式
+- 如果存在参数,则通过
+- 如果不存在参数，则通过
+- 如果参数等于某一个具体值,则通过
+
+ 
+
 
 

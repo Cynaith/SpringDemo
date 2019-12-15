@@ -1,6 +1,6 @@
 #### 方法参数
 Spring Controller方法可以接受多种类型参数
-- **@PathVariable:** 可以将URL中的值映射到方法参数中
+- **[@PathVariable](#@PathVariable):** 可以将URL中的值映射到方法参数中
 - **Model:** Spring中的通用MVC模型,也可以使用Map和ModelMap作为渲染视图的模型
 - **ModelAndView:** 包含了模型和视图路径的对象
 - **JavaBean:** 将HTTP参数映射到JavaBean对象 

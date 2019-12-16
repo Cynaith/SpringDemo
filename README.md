@@ -9,10 +9,10 @@
 * [URL映射到方法](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/UrlToFunction.md)
 * [方法参数](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/FunctionParameter.md)
 * [验证框架](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/VerificationFramework.md)
-* WebMvcConfig
-* 视图技术
-* 通用错误处理
-* @Service和Transactional
+* [WebMvcConfig](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/WebMvcConfigure.md)
+* [视图技术](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/View.md)
+* [通用错误处理](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/GeneralErrorHandling.md)
+* [@Service和Transactional](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringMVC/ServiceAndTransactional.md)
 * curl命令
 
 

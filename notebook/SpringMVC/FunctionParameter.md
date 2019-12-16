@@ -4,8 +4,8 @@ Spring Controller方法可以接受多种类型参数
 - **[Model](#model和ModelAndView):** Spring中的通用MVC模型,也可以使用Map和ModelMap作为渲染视图的模型
 - **[ModelAndView](#model和ModelAndView):** 包含了模型和视图路径的对象
 - **[JavaBean](#javaBean接受HTTP参数):** 将HTTP参数映射到JavaBean对象 
-- **MultiPartFile:** 用于处理文件上传 
-- **@ModelAttribute:** 使用该注解的变量将作为Model的一个属性 
+- **[MultiPartFile](#MultipartFile):** 用于处理文件上传 
+- **[@ModelAttribute](#modelAttribute):** 使用该注解的变量将作为Model的一个属性 
 - **WebRequest或者NativeWebRequest:** 类似Servlet Request但做了一定封装。
 - **java.io.InputStream和java.io.Reader:** 用来获取Servlet API中的InputStream/Reader  
 - **java.io.OutputStream和java.io.Writer:** 用来获取Servlet API中的OutputStream/Writer
@@ -13,11 +13,11 @@ Spring Controller方法可以接受多种类型参数
 - **@MatrixVariable:** 矩阵变量  
 - **[@RequestParam](#requestParam):** 对应于HTTP请求的参数,自动转化为参数对应的类型  
 - **@RequestHeader:** 对应于HTTP请求头参数,自动转化为对应的类型 
-- **@RequestBody:** 自动将请求内容转化为指定的对象,默认使用HttpMessageConverters来转化 
+- **[@RequestBody](#requestBody接受Json):** 自动将请求内容转化为指定的对象,默认使用HttpMessageConverters来转化 
 - **@RequestPart:** 用于文件上传,对应于HTTP协议的multipart/form-data 
 - **@SessionAttribute:** 该方法标注的变量来自于Session的属性 
 - **@RequestAttribute:** 该标注的变量来自于request的属性 
-- **@InitBinder:**  用在方法上,说明这个方法会注册多个转化器,用来个性化地将HTTP请求参数转化成对应的Java对象,如转化为日期类型,浮点类型、javaBean等。也可实现WebBindingInitializer接口用于Spring Boot应用所需要的dataBinder。
+- **[@InitBinder](#initBinder):**  用在方法上,说明这个方法会注册多个转化器,用来个性化地将HTTP请求参数转化成对应的Java对象,如转化为日期类型,浮点类型、javaBean等。也可实现WebBindingInitializer接口用于Spring Boot应用所需要的dataBinder。
 - **BinderResult和Errors:** 用来处理数据绑定过程中的错误
 
 ---

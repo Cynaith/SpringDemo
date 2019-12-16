@@ -24,7 +24,7 @@
     * 动态代理
         * **有接口:** 使用jdk动态代理
         * **无接口:** 使用cglib动态代理
-* 术语
+* [术语](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Spring/SpringAopTerm.md)
 * ~~AOP操作~~
 #### Spring的事务管理
 * 特性

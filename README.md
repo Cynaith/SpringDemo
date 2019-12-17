@@ -13,7 +13,7 @@
    * 使用
         * 配置文件方式
         * 注解方式
-   * bean管理(使用对象) ~~17号实现~~
+   * [bean管理(使用对象)](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Spring/SpringBean.md)
    * IOC与DI区别
         * IOC是创建对象,DI是给类里面的属性设置值
         * DI不能单独存在,需要在IOC的基础上完成操作

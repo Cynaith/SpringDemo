@@ -81,3 +81,46 @@
         ```
        
     - 使用接口注入(Spring不支持)
+
+-  注入对象类型属性
+    ```xml
+        <bean id="userDao" class="com.ly.springdemo.Spring.UserDao"></bean>
+        <bean id="userService" class="com.ly.springdemo.Spring.UserService">
+        <property name="userDao" ref="userDao"></property>
+        </bean>
+    ``` 
+    [UserService.java](https://github.com/Cynaith/SpringDemo/tree/master/src/main/java/com/ly/springdemo/Spring/UserService.java)<br>
+    [UserDao.java](https://github.com/Cynaith/SpringDemo/tree/master/src/main/java/com/ly/springdemo/Spring/UserDao.java)   
+- 注入复杂类型属性
+    ```xml
+        <bean id="setComplexType" class="com.ly.springdemo.Spring.SetComplexType">
+        <property name="arr">
+            <list>
+                <value>123</value>
+                <value>2133</value>
+            </list>
+        </property>
+        <property name="list">
+            <list>
+                <value>xiaoming</value>
+                <value>xiaohua</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="name" value="xiaoming"></entry>
+                <entry key="name1" value="xiaohua"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="driverclass">com.mysql.jdbc.driver</prop>
+                <prop key="username">root</prop>
+                <prop key="password">admin</prop>
+            </props>
+        </property>
+        </bean>
+    ```
+    [SetComplexType.java](https://github.com/Cynaith/SpringDemo/tree/master/src/main/java/com/ly/springdemo/Spring/SetComplexType.java)<br>
+    [SpringTest.java](https://github.com/Cynaith/SpringDemo/tree/master/src/main/java/com/ly/springdemo/Spring/SpringTest.java)
+    

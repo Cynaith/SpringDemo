@@ -26,7 +26,7 @@
         * **有接口:** 使用jdk动态代理
         * **无接口:** 使用cglib动态代理
 * **[术语](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Spring/SpringAopTerm.md)** 
-* **[AOP操作](https://github.com/Cynaith/SpringDemo/blob/master/src/com/ly/springdemo/AOP)**
+* **[AOP操作](https://github.com/Cynaith/SpringDemo/tree/master/src/main/java/com/ly/springdemo/AOP)**
 #### Spring的事务管理
 * **特性**
     * **原子性:** 事务应该当作一个单独单元的操作,整个序列操作要么是成功的,要么是失败的

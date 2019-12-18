@@ -13,14 +13,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-@Controller
-public class ErrorController extends AbstractErrorController {
-    public ErrorController() {
-        super(new DefaultErrorAttributes());
-    }
-    @RequestMapping("/error")
-    public String getErrorPath() {
-        //处理异常
-        return "error.html";
-    }
-}
+//@Controller
+//public class ErrorController extends AbstractErrorController {
+//    public ErrorController() {
+//        super(new DefaultErrorAttributes());
+//    }
+//    @RequestMapping("/error")
+//    public String getErrorPath() {
+//        //处理异常
+//        return "error.html";
+//    }
+//}

@@ -63,6 +63,18 @@
 ---
 #### Mybatis
 
+* [Mybatis入门](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/MybatisInit.md)
+* Mybatis XML方式基本用法
+* Mybatis注解方式的基本用法
+* Mybatis动态SQL
+* Mybatis代码生成器
+* Mybatis高级查询
+* Mybatis缓存配置
+* Mybatis插件开发
+* Spring 集成Mybatis
+* Spring Boot集成Mybatis
 
 
 ---
+
+- SpringBoot启动后输出字符: resources下创建banner.txt 字母转字符:[http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)

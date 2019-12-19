@@ -21,9 +21,15 @@ public class TestController {
         return userMapping.getNameById();
     }
 
-    @RequestMapping("/DynamicTest")
+    @RequestMapping("/DynamicTest/select")
     public int DynamicTest(DynamicTable dynamicTable){
         System.out.println(dynamicTable);
         return dynamicMapping.getIdByKey1AndKey2(dynamicTable);
+    }
+    @RequestMapping("/DynamicTest/insert")
+    public int DynamicInsert(DynamicTable dynamicTable){
+        System.out.println(dynamicTable);
+        dynamicMapping.saveDynamic(dynamicTable);
+        return dynamicTable.getId();
     }
 }

@@ -65,7 +65,7 @@
 
 * [Mybatis入门](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/MybatisInit.md)
 ~~* Mybatis XML方式基本用法~~
-~~* Mybatis注解方式的基本用法~~
+* [Mybatis注解方式的基本用法](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/MybatisAnnotation.md)
 * [Mybatis动态SQL](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/DynamicSQL.md)
 * Mybatis代码生成器
 * Mybatis高级查询

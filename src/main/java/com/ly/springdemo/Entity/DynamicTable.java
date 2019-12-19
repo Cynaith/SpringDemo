@@ -1,5 +1,8 @@
 package com.ly.springdemo.Entity;
 
+
+
+
 public class DynamicTable {
     int id;
     String key1;

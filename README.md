@@ -70,7 +70,7 @@
 ~~* Mybatis代码生成器~~
 * [Mybatis高级查询](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/DynamicSQL.md)
 * [Mybatis缓存配置](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/MybatisCache.md)
-* Mybatis插件开发
+* [Mybatis插件开发](https://github.com/Cynaith/SpringDemo/blob/master/notebook/Mybatis/MybatisPlugins.md)
 * Spring 集成Mybatis
 * Spring Boot集成Mybatis
 

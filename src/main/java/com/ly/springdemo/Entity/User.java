@@ -1,7 +1,11 @@
 package com.ly.springdemo.Entity;
 
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+
+    private static final long serialVersionUID = -1612749521204546642L;
     int id;
     String name;
 

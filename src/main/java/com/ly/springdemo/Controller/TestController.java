@@ -32,7 +32,7 @@ public class TestController {
     public int DynamicTest(DynamicTable dynamicTable){
 
         System.out.println(dynamicTable);
-        return dynamicMapping.getIdByKey1AndKey2(dynamicTable);
+        return (int)dynamicMapping.getIdByKey1AndKey2(dynamicTable);
     }
     @RequestMapping("/DynamicTest/insert")
     public int DynamicInsert(DynamicTable dynamicTable){

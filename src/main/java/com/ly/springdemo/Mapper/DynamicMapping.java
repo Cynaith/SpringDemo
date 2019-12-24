@@ -1,5 +1,6 @@
 package com.ly.springdemo.Mapper;
 
+import com.ly.springdemo.Cache.RedisCache;
 import com.ly.springdemo.Entity.DynamicTable;
 import com.ly.springdemo.Mapper.DynamicProvider.DynamicProvider;
 import org.apache.ibatis.annotations.*;
@@ -7,7 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@CacheNamespace
+@CacheNamespace(implementation = RedisCache.class)
 public interface DynamicMapping {
 
 

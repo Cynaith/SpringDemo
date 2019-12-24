@@ -17,7 +17,7 @@ public class DynamicProvider {
                 if(dynamicTable.getKey2()!=null){
                     WHERE("dt.key2 = #{key2}");
                 }
-                WHERE("u.name = name");
+                WHERE("u.name = 'name'");
             }
         }.toString();
     }

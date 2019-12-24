@@ -1,9 +1,11 @@
 package com.ly.springdemo.Entity;
 
 
+import java.io.Serializable;
 
+public class DynamicTable implements Serializable {
 
-public class DynamicTable {
+    private static final long serialVersionUID = -3311641339907293333L;
     int id;
     String key1;
     String key2;

@@ -76,5 +76,9 @@
 
 
 ---
+#### SpringBoot
+* [业务层校验](https://github.com/Cynaith/SpringDemo/blob/master/notebook/SpringBoot/Valid.md)
 
+
+---
 - SpringBoot启动后输出字符: resources下创建banner.txt 字母转字符:[http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)

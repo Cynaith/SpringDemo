@@ -40,7 +40,7 @@
 - **Validator+自动抛出异常**
     - 新建一个类 在这个类上添加注解@ControllerAdvice或@RestControllerAdvice，借此这个类就配置成了全局处理类。<br/>
     然后在类中新建方法，方法上加上@ExceptionHandler注解，并指定你想处理的异常类型，接着在方法内编写对该异常的操作逻辑
-        ```
+        ```java
          /**
         * @ExceptionHandler里输入想要获取的异常
         * @param e
